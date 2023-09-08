@@ -36,9 +36,9 @@ Algoritmo cargaDeProductos
 	Para i<- 1 Hasta 20                                                                     //////////////////////////////////////
 		Escribir "artículo: ", i, "   nombre: ",producto[i] , "  Precio: $ ", precio[i];   // MENU DE PRODUCTOS CON SUS ARTICULOS
 	FinPara                                                                                //////////////////////////////////////
-	Escribir "Para emitir una factura toque cualquier tecla"; // QUEDA A LA ESPERA PARA PASAR A FACTURAR
+	Escribir "Para emitir una factura presione una tecla"; // QUEDA A LA ESPERA PARA PASAR A FACTURAR
 	Esperar Tecla
-	Escribir " Ingrese el articulo que quiere incorporar a la factura "
+	Escribir " Ingrese el número de árticulo que quiere incorporar a la factura "
 	Repetir
 		Leer articulo
 		si articulo <> "0" Entonces
@@ -52,9 +52,6 @@ Algoritmo cargaDeProductos
 			Escribir " Importe acumulado $ ", subtotal;
 			Escribir "Ingrese el articulo que desea incorporar a la factura"
 			Escribir "artículo 0 para finalizar la compra"
-			Para i<- 1 Hasta 20                                                                     //////////////////////////////////////
-			Escribir "artículo: ", i, "   nombre: ",producto[i] , "  Precio: $ ", precio[i];   // MENU DE PRODUCTOS CON SUS ARTICULOS
-			FinPara                                                                                //////////////////////////////////////
 		FinSi
 	Hasta Que articulo = "0"
 	Escribir "Su compra es de $ ",subtotal; 
